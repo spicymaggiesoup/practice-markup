@@ -15,15 +15,58 @@ header {
     height: 100px;
     width: 1200px;
     position: relative;
+    /* 
+        position: relative;
+        기본상태는  static
+        top, right, bottom, left 와 같은 속성에 의한 상대적 위치에 배치
+    */
 }
 .top {
     height: 100px;
     width: 1200px;
     position: absolute;
+    /* 
+        position: absolute; 
+        기본상태를 따르지 않음
+        가장 가까운 위치의 조상의 상대적 위치에 배치
+    */
+}
+.logo {
+    height: 100px;
+    width: 250px;
+    float: left;
+}
+.menu {
+    height: 100px; /* 본인이 추가한 것 */
+    width: 800px;
+    float: right;
+    position: absolute;
+    right: 0;
 }
 
 /* bodyWrap */
-
+.bodyWrap {
+    height: 500px;
+    width: 1200px;
+}
+.imgSlide {
+    height: 300px;
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+.contents {
+    height: 200px;
+    width: 1200px;
+    position: absolute;
+}
+.tabMenu {
+    height: 200px;
+    
+}
+.otherWrap {
+    height: 200px;
+}
 
 /* footer */
 footer {
