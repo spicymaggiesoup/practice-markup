@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Author">
     <title>해변빛축제</title>
+    <script src="./../../resources/jquery.js"></script>
     <link href="./css/common.css" rel="stylesheet">
     <script src="./js/common.js"></script>
 </head>
@@ -20,33 +21,33 @@
     <header>
         <div class="top">
             <div class="logo">
-                <img src="./../../resources/Header/top_logo.png">
+                <a href="#"><img src="./../../resources/Header/top_logo_PAGE188.png"></a>
             </div>
             <nav class="sidemenu">
-                <ul>
+                <ul class="menu-ul">
                     <li><a href="#">이용안내</a>
-                        <ul>
+                        <ul class="submenu-ul">
                             <li><a href="#">이용방법</a></li>
                             <li><a href="#">이용시간</a></li>
                             <li><a href="#">이용요금</a></li>
                         </ul>
                     </li>
                     <li><a href="#">이벤트정보</a>
-                        <ul>
+                        <ul class="submenu-ul">
                             <li><a href="#">현장이벤트</a></li>
                             <li><a href="#">온라인이벤트</a></li>
                             <li><a href="#">이벤트예약</a></li>
                         </ul>
                     </li>
                     <li><a href="#">프로그램</a>
-                        <ul>
+                        <ul class="submenu-ul">
                             <li><a href="#">프로그램안내</a></li>
                             <li><a href="#">온라인예약</a></li>
                             <li><a href="#">단체예약</a></li>
                         </ul>
                     </li>
                     <li><a href="#">고객센터</a>
-                        <ul>
+                        <ul class="submenu-ul">
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">자주묻는질문</a></li>
                             <li><a href="#">자료실</a></li>
@@ -57,30 +58,58 @@
         </div>
     </header>
     
-    <div class="middle">
-        <div class="main-img">
-
+    <div class="bodywrap">
+        <div class="slider">
+            <a href="#">
+                <img src="./../../resources/Slide/Picture4_PAGE188.png" alt="화면1">
+                <span class="sliderText">슬라이드 화면 - 1</span>
+            </a>
+            <a href="#">
+                <img src="./../../resources/Slide/Picture10.png" alt="화면2">
+                <span class="sliderText">슬라이드 화면 - 2</span>
+            </a>
+            <a href="#">
+                <img src="./../../resources/Slide/Picture4.png" alt="화면3">
+                <span class="sliderText">슬라이드 화면 - 3</span>
+            </a>
         </div>
         <div class="contents">
             <!-- tabs 영역과 좌측영역과 나눌필요x -->
-            <ul>
-                <li>
+            <ul class="tabs">
+                <li class="active"><a href="#">공지사항</a>
                     <div class="notice">
-
+                        <ul>
+                            <li>
+                                <a href="#">공지사항 - 1
+                                <span>2020.03.01</span></a>
+                            </li>
+                            <li>
+                                <a href="#">공지사항 - 2
+                                <span>2020.03.01</span></a>
+                            </li>
+                            <li>
+                                <a href="#">공지사항 - 3
+                                <span>2020.03.01</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </li>
-                <li>
+                <li><a href="#">갤러리</a>
                     <div class="gallery">
-
+                        <ul>
+                            <li><a href="#"><img src="./../../resources/Contents/Picture10.png" alt="갤러리1"></a></li>
+                            <li><a href="#"><img src="./../../resources/Contents/Picture11.png" alt="갤러리2"></a></li>
+                            <li><a href="#"><img src="./../../resources/Contents/Picture3.png" alt="갤러리3"></a></li>
+                        </ul>
                     </div>
                 </li>
             </ul>
             <div class="others">
                 <div class="banner">
-    
+                    자리자리
                 </div>
                 <div class="shortcut">
-                    
+                    자리자리
                 </div>
             </div>
         </div>
@@ -90,14 +119,14 @@
     <footer>
         <div class="bottom">
             <div class="bottom-logo">
-
+                자리자리
             </div>
             <div class="bottom-others">
                 <div class="bottom-menu">
-
+                    자리자리
                 </div>
                 <div class="copyright">
-
+                    자리자리
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 * {
-      margin: 0;
+      margin: 0 auto;
       padding: 0;
       list-style: none;
       /* 기본 텍스트색 */
@@ -7,7 +7,6 @@
 }
 body {
       width: 1000px;
-      height: 650px;
       background-color: #ffffff;
 }
 a {
@@ -17,53 +16,227 @@ a {
 
 /* header */
 header {
-      
+      float: left;
+      /* hard */
+      position: absolute;
 }
 .top {
-
+      float: left;
+      height: 650px;
+      width: 200px;
+      background: lightgrey;
 }
 .logo {
-      background: lightblue;
+      float: left;
+      height: 100px;
+      width: 200px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+}
+.logo img{
+      float: left;
+      margin-top: 5px;
+      margin-left: 15px;
 }
 .sidemenu {
-      background: lightcyan;
+      width: 180px;
+      position: absolute;
+      /* */top: 100px;
+      left: 10px; 
+      z-index: 1;
+      text-align: center;
+}
+.menu-ul > li {
+      width: 180px;
+      display: block;
+}
+.menu-ul > li > a {
+      height: 40px;
+      line-height: 40px;
+      width: 180px;
+      font-weight: bold;
+      background-color: rgba(0, 255, 0, 0.514);
+}
+.menu-ul > li > a:hover {
+      background-color: linen;
+}
+.submenu-ul {
+      /* 서브메뉴를 오른편에 따로 띄우기위함 */
+      float: left;
+      width: 180px;
+      height: 100%;
+      top: 0;
+      left: 180px;
+      z-index: 1;
+      /* position 띄운 곳 위에 또 띄움*/
+      position: absolute;
+
+      visibility: hidden;
+      opacity: 0;
+      /* transition: visibility 0.25s, opacity 0.5s; */
+      transition: all 0.25s;
+}
+.submenu-ul > li> a {
+      height: 40px;
+      line-height: 40px;
+      width: 180px;
+      background: linen;
+}
+.submenu-ul > li> a:hover {
+      background: rgba(0, 255, 0, 0.514);
 }
 
-/* body */
-.middle {
-
+/* body1 */
+.bodywrap {
+      float: right;
+      height: 550px;
+      width: 800px;
 }
-.main-img {
-      background: lightyellow;
+.slider {
+      height: 350px;
+      width: 800px;
+      position: relative;
+}
+.slider > a {
+      height: 350px;
+      width: 800px;
+      overflow: hidden;
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      transition: all 0.3s;
+}
+.sliderText {
+      height: 25px;
+      width: 300px;
+      position: absolute;
+      top: 70%;
+      left: 33%;
+
+      color: linen;
+      font-weight: bold;
+      font-size: large;
+      text-align: center;
+      background-color: brown;
+}
+
+/* body2 */
+.contents {
+      float: right;
+      height: 200px;
+      width: 800px;
 }
 .tabs {
-      background: rgb(233, 233, 112);
+      float: left;
+      width: 300px;
+      height: 200px;
+      margin: 10px 0 10px 5px;
+}
+.tabs li {
+      float: left;
+      width: 80px;
+      line-height: 30px;
+}
+.tabs > li > a{
+      display: block;
+      font-size: 14px;
+      text-align: center;
+      border-bottom: none;
+}
+.tabs > li > a:hover {
+      background-color: linen;
+}
+.tabs > li:first-child a{
+      border-right: none;
+}
+/* 탭 콘텐츠 영역 */
+.tabs > li div {
+      /* position: absolute; 오류..???? */
+      left: 5px;
+      height: 0;
+      overflow: hidden;
+}
+/* active 클래스가 추가된 영역 */
+.tabs > li.active div {
+      width: 288px;
+      height: 148px;
+      border: 1px solid;
+      z-index: 1;
+}
+/* 공지사항의 div 영역 */
+.notice ul {
+      float: left;
+      width: 288px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+}
+.notice li {
+      height: 32px;
+      line-height: 32px;
+      margin-left: 10px;
+      margin-right: 10px;
+}
+.notice li span {
+      float: right;
+}
+.notice li:hover {
+      font-weight: bold;
 }
 .others {
+      float: right;
+      height: 200px;
+      width: 500px;
 }
 .banner {
       background: lightgreen;
+      float: left;
+      height: 200px;
+      width: 250px;
 }
 .shortcut {
       background: lightpink;
+      float: right;
+      height: 200px;
+      width: 250px;
 }
 
 /* footer */
 footer {
-
+      float: right;
+      width: 800px;
+      height: 100px;
 }
 .bottom {
-
+      background: rgb(233, 233, 112);
+      float: left;
+      height: 100px;
+      width: 800px;
 }
 .bottom-logo {
       background: lightsalmon;
+      float: left;
+      height: 100px;
+      width: 200px;
 }
 .bottom-others {
-
+      float: right;
+      width: 600px;
+      height: 100px;
 }
 .bottom-menu {
       background: lightseagreen;
+      height: 50px;
+      width: 600px;
 }
 .copyright {
       background: lightgrey;
+      height: 50px;
+      width: 600px;
+}
+
+/* etc */
+.show {
+      visibility: visible;
+      opacity: 1;
 }
