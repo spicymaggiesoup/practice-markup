@@ -76,25 +76,29 @@
         <div class="contents">
             <!-- tabs 영역과 좌측영역과 나눌필요x -->
             <ul class="tabs">
-                <li class="active"><a href="#">공지사항</a>
+                <li class="tabs-li active"><a href="#">공지사항</a>
                     <div class="notice">
                         <ul>
                             <li>
-                                <a href="#">공지사항 - 1
+                                <a href="#">해변에서 펼쳐지는 노래공연
                                 <span>2020.03.01</span></a>
                             </li>
                             <li>
-                                <a href="#">공지사항 - 2
+                                <a href="#">바다의 야경과 빛공연 관람하기
                                 <span>2020.03.01</span></a>
                             </li>
                             <li>
-                                <a href="#">공지사항 - 3
+                                <a href="#">불꽃놀이 이벤트를 신청하세요
+                                <span>2020.03.01</span></a>
+                            </li>
+                            <li>
+                                <a href="#">빛축제 단체관람 안내
                                 <span>2020.03.01</span></a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">갤러리</a>
+                <li class="tabs-li"><a href="#">갤러리</a>
                     <div class="gallery">
                         <ul>
                             <li><a href="#"><img src="./../../resources/Contents/Picture10.png" alt="갤러리1"></a></li>
@@ -106,10 +110,16 @@
             </ul>
             <div class="others">
                 <div class="banner">
-                    자리자리
+                    <a href="#">
+                        <img src="./../../resources/Contents/Picture7.png" alt="배너사진">
+                        <span>배너</span>
+                    </a>
                 </div>
                 <div class="shortcut">
-                    자리자리
+                    <a href="#">
+                        <img src="./../../resources/Contents/Picture8.png" alt="바로가기사진">
+                        <span>바로가기</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -119,18 +129,40 @@
     <footer>
         <div class="bottom">
             <div class="bottom-logo">
-                자리자리
+                <a href="#">
+                    <img alt="푸터로고" src="./../../resources/Contents/Picture11_PAGE188.png">
+                </a>
             </div>
             <div class="bottom-others">
                 <div class="bottom-menu">
-                    자리자리
+                    <ul>
+                        <li><a href="#">하단메뉴1</a></li>
+                        <li><a href="#">하단메뉴2</a></li>
+                        <li><a href="#">하단메뉴3</a></li>
+                    </ul>
                 </div>
                 <div class="copyright">
-                    자리자리
+                    copyright ⓒ soyeon
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="popup-back">
+        <div class="popup">
+            <div>타이틀</div>
+            <div style="margin-top: 10px;">
+                <p>어쩌구저쩌구이것은팝업창이고팝업창내용이고그렇다그렇고그럼</p>
+                <p>어쩌구저쩌구이것은팝업창이고팝업창내용이고그렇다그렇고그럼</p>
+                <p>어쩌구저쩌구이것은팝업창이고팝업창내용이고그렇다그렇고그럼</p>
+                <p>어쩌구저쩌구이것은팝업창이고팝업창내용이고그렇다그렇고그럼</p>
+                <p>어쩌구저쩌구이것은팝업창이고팝업창내용이고그렇다그렇고그럼</p>
+            </div>
+            <div style="margin-top: 30px;margin-left: 350px;background-color: linen;">
+                <input type="button" value="닫기" onclick="$('.popup-back').attr('style', 'display:none');"/>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

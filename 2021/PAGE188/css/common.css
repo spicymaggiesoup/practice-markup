@@ -129,11 +129,12 @@ header {
 }
 .tabs {
       float: left;
-      width: 300px;
+      width: 280px;
       height: 200px;
-      margin: 10px 0 10px 5px;
+      margin: 10px 0 10px 16px;
+      position: relative;
 }
-.tabs li {
+.tabs > li {
       float: left;
       width: 80px;
       line-height: 30px;
@@ -143,12 +144,23 @@ header {
       font-size: 14px;
       text-align: center;
       border-bottom: none;
+      border-top: 1px solid #dddddd;
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd;
+      background-color: linen;
 }
 .tabs > li > a:hover {
       background-color: linen;
 }
 .tabs > li:first-child a{
       border-right: none;
+      font-size: 13px;
+}
+.tabs > li:first-child a:hover{
+      border-right: none;
+      font-size: 13px;
+      background-color: linen;
+      transition: all 0.3s;
 }
 /* 탭 콘텐츠 영역 */
 .tabs > li div {
@@ -161,8 +173,14 @@ header {
 .tabs > li.active div {
       width: 288px;
       height: 148px;
-      border: 1px solid;
+      border: 1px solid #dddddd;
       z-index: 1;
+      background-color: #ffffff;
+      position: absolute;
+      left: -10px;
+}
+.tabs > li.active a {
+      background-color: #ffffff;
 }
 /* 공지사항의 div 영역 */
 .notice ul {
@@ -170,6 +188,7 @@ header {
       width: 288px;
       margin-top: 12px;
       margin-bottom: 12px;
+      position: relative;
 }
 .notice li {
       height: 32px;
@@ -179,26 +198,80 @@ header {
 }
 .notice li span {
       float: right;
+      margin-left: 10px;
 }
 .notice li:hover {
       font-weight: bold;
+}
+.gallery {
+      position: relative;
+}
+.gallery li {
+      float: left;
+      margin-top: 12px;
+      margin-bottom: 12px;
+}
+.gallery img {
+      height: 90px;
+      width: 70px;
+      padding: 10px;
+}
+.gallery img:hover {
+      opacity: 0.5;
+      transition: opacity 0.2s;
 }
 .others {
       float: right;
       height: 200px;
       width: 500px;
+      position: relative;
+}
+.others span {
+      position: absolute;
+      top: 40%;
+      color: #ffffff;
+      font-size: 50px;
+      line-height: 50px;
 }
 .banner {
       background: lightgreen;
       float: left;
       height: 200px;
       width: 250px;
+      overflow: hidden;
 }
 .shortcut {
       background: lightpink;
       float: right;
       height: 200px;
       width: 250px;
+      overflow: hidden;
+}
+
+/* modal popup */
+.popup-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #000000;
+      z-index: 1;
+      display: none;
+      opacity: 0.9;
+}
+.popup {
+      width: 400px;
+      height: 300px;
+      top: 30%;
+      position: fixed;
+      z-index: 34;
+      left: 42%;
+      background: #ffffff;
+}
+.popup input:hover{
+      cursor: pointer;
+      background-color: black;
 }
 
 /* footer */
@@ -208,13 +281,12 @@ footer {
       height: 100px;
 }
 .bottom {
-      background: rgb(233, 233, 112);
+      background: linen;
       float: left;
       height: 100px;
       width: 800px;
 }
 .bottom-logo {
-      background: lightsalmon;
       float: left;
       height: 100px;
       width: 200px;
@@ -229,10 +301,15 @@ footer {
       height: 50px;
       width: 600px;
 }
+.bottom-menu li{
+      display: inline-block;
+      margin: 13px 60px;
+}
 .copyright {
       background: lightgrey;
       height: 50px;
       width: 600px;
+      line-height: 45px;
 }
 
 /* etc */

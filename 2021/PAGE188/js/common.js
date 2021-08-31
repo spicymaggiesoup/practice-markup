@@ -20,14 +20,14 @@ $(document).ready(function() {
         target.eq(now).animate({ width: '800px' })
     }, 3000);
 
-    // var num = 1;
-    // setInterval(function() {
-    //     if (num < 3) {
-    //         target.animate({width: -800 * num + 'px'});
-    //         num += 1;
-    //     } else if (num === 3) {
-    //         target.animate({width: 800 + 'px'});
-    //         num = 1;
-    //     }
-    // }, 2500);
+    // 탭 activate
+    $('.tabs-li').on('click', function() {
+        $(this).siblings().toggleClass('active');
+        $(this).toggleClass('active');
+    });
+
+    // 공지사항 팝업
+    $('.notice a').on('click', function() {
+        $('.popup-back').attr('style', 'display:block');
+    });
 });
