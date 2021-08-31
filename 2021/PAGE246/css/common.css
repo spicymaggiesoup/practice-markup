@@ -1,0 +1,91 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+a {
+    text-decoration: none;
+}
+
+/* 헤더 */
+header {
+    width: 1200px;
+    height: 100px;
+}
+header .logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+}
+header .top-menu {
+    background-color: #0066ad;
+    width: 1000px;
+    float: right;
+    margin-top: 20px;
+}
+.top-menu > ul {
+    float: right;
+}
+.menu-main {
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+.menu-main:hover{
+    background-color: #30a3f3;
+    transition: all 0.25;
+}
+.menu-main >a {
+    line-height: 50px;
+    color: #ffffff;
+}
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s; 
+}
+.submenu li{
+    background: #0066ad;
+    padding: 5px 0 2px 2px;
+}
+.submenu a {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 13px;
+}
+.submenu li:hover {
+    background-color: #30a3f3;
+    transition: all 0.25;
+}
+
+/* 바디 */
+.body-wrap {
+    height: 500px;
+    width: 1200px;
+}
+.slider {
+    background: skyblue;
+    width: 1200px;
+    height: 300px;
+}
+.tabs {
+    background: slateblue;
+}
+.others {
+    background: slategray;
+}
+.banner {
+    
+}
+
+/* etc */
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.25s;
+}
