@@ -9,6 +9,7 @@ body {
 }
 a {
     text-decoration: none;
+    display: block;
 }
 
 /* 헤더 */
@@ -33,8 +34,9 @@ header .top-menu {
 }
 .menu-main {
     float: left;
-    width: 100px;
     height: 50px;
+    width: auto;
+    text-align: center;
 }
 .menu-main:hover{
     background-color: #30a3f3;
@@ -43,6 +45,7 @@ header .top-menu {
 .menu-main >a {
     line-height: 50px;
     color: #ffffff;
+    margin: 0px 10px;
 }
 .submenu {
     visibility: hidden;
@@ -51,7 +54,7 @@ header .top-menu {
 }
 .submenu li{
     background: #0066ad;
-    padding: 5px 0 2px 2px;
+    padding: 10px 0 10px 2px;
 }
 .submenu a {
     color: #ffffff;
@@ -69,18 +72,71 @@ header .top-menu {
     width: 1200px;
 }
 .slider {
-    background: skyblue;
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    /* position: relative */
+}
+.slider img {
     width: 1200px;
     height: 300px;
 }
+
+/* 콘텐츠 */
+.contnets {
+    width: 1200px;
+    height: 200px;
+}
 .tabs {
     background: slateblue;
+    float: left;
+    height: 200px;
+    width: 400px;
 }
 .others {
-    background: slategray;
+    float: right;
+    height: 200px;
+    width: 800px;
 }
 .banner {
-    
+    height: 200px;
+    width: 400px;
+    background: slategray;
+    float: left;
+}
+.shortcut {
+    height: 200px;
+    width: 400px;
+    background: lemonchiffon;
+    float: right;
+}
+
+/* 푸터 */
+footer {
+    height: 100px;
+    width: 1200px;
+}
+.bottom-logo {
+    background:lightblue;
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+.bottom-others {
+    float: right;
+    width: 1000px;
+    height: 100px;
+}
+.bottom-menu {
+    background:lightcoral;
+    height: 50px;
+}
+.bottom-menu li {
+    display: inline-block;
+}
+.copyright {
+    background:lightgreen;
+    height: 50px;
 }
 
 /* etc */
