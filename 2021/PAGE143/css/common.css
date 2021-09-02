@@ -22,7 +22,7 @@ header {
       float: left;
 }
 .logo {
-      margin-top: 50px;
+      margin-top: 25px;
       height: 40px;
       width: 200px;
 }
@@ -60,6 +60,8 @@ header {
 .bodyWrap {
       float: right;
 }
+
+/* 슬라이더 */
 .slider {
       width: 800px;
       height: 350px;
@@ -73,7 +75,126 @@ header {
       position: absolute;
 }
 
-/* 푸터 */
-footer {
+/* 컨텐츠 */
+.contents{
+      width: 800px;
+      height: 200px;
+}
+.tabs {
+      float: left;
+      width: 500px;
+      height: 200px;
+}
+.tabs>ul{
+      width: 232px;
+      height: 200px;
+      margin: 5px;
+      display: inline-block;
+}
+.tabs>ul>li>a{
+      text-align: center;
+      line-height: 28px;
+      color: #ffffff;
+      background: lightseagreen;
+      height: 30px;
+      width: 130px;
+      margin-left: 20px;
+}
+.tabs>ul>li>div{
+      border: 1px solid #dddddd;
+      width: 232px;
+      height: 150px;
+}
+.tabs>ul>li>div>ul{
+      margin: 10px;
+}
+.tabs>ul>li>div li{
+      width: 200px;
+      height: 10px;
+      margin: 8px;
+}
+.tabs ul>li>div li>a{
+      font-size: 10px;
+      float: left;
+}
+.tabs ul>li>div li>span{
+      font-size: 10px;
       float: right;
+}
+.tabs ul>li>div img{
+      width: 67px;
+      height: 67px;
+      margin: 40px 5px 5px 5px;
+      float: right;
+}
+.shortcut {
+      float: right;
+      width: 300px;
+      height: 200px;
+}
+.shortcut img {
+      width: 300px;
+      height: 200px;
+}
+
+/* 푸터 */
+footer{
+      width: 800px;
+      height: 100px;
+      float: right;
+}
+.copyright {
+      background: lightgrey;
+      width: 650px;
+      height: 100px;
+      float: left;
+}
+.copyright > a{
+      line-height: 93px;
+      text-align: center;
+      font-size: 25px;
+}
+.others {
+      width: 150px;
+      height: 100px;
+      float: right;
+}
+.sns {
+      background: lightseagreen;
+      width: 150px;
+      height: 50px;
+}
+.sns img {
+      width: 45px;
+      height: 45px;
+      float: left;
+      margin: 2px;
+}
+.combobox{
+      background: lightgreen;
+      width: 150px;
+      height: 50px;
+}
+
+/* 모달팝업 */
+.background{
+      position: relative;
+      background: black;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      opacity: 0.9;
+}
+.modal {
+      background: #ffffff;
+      position: absolute;
+      width: 450px;
+      height: 200px;
+      top: 20%;
+      left: 28%;
+      z-index: 5;
+      opacity: 1;
+}
+.hide {
+      display: none;
 }
