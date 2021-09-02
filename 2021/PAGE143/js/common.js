@@ -9,11 +9,11 @@ $(document).ready(function() {
       // 슬라이드
       var now = 0;
       var ttl = 2;
-      $('.slider a').eq(0).fadeIn();
+      $('.slider a').eq(0).siblings().fadeOut();
       setInterval(function() {
-            now = now === ttl ? 0 : now;
-            $('.slider a').eq(now += 1).fadeIn();
-            $('.slider a').eq(now).fadeOut();
+            now = now === ttl ? 0 : now += 1;
+            $('.slider a').eq(now - 1).fadeOut();
+            $('.slider a').eq(now).fadeIn();
       }, 1500);
 });
 
