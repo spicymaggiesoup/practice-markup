@@ -1,0 +1,79 @@
+/* 기본 */
+* {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      color: #222328;
+}
+a {
+      display: block;
+      text-decoration: none;
+}
+body {
+      background: #ffffff;
+      width: 1000px;
+      height: 650px;
+}
+
+/* 헤더 */
+header {
+      width: 200px;
+      height: 650px;
+      float: left;
+}
+.logo {
+      margin-top: 50px;
+      height: 40px;
+      width: 200px;
+}
+.sidemenu {
+      background: lightseagreen;
+      width: 200px;
+      margin-top: 50px;
+}
+.sidemenu>ul>li a {
+      height: 50px;
+      line-height: 50px;
+      font-size: 21px;
+      text-align: center;
+}
+.sidemenu>ul>li a:hover {
+      background: lightgreen;
+      transition: all 0.25s;
+}
+.sidemenu-title > ul{
+      /* opacity: 0;
+      visibility: hidden; */
+      background: lightgreen;
+      display: none;
+      transition: all 0.25s;
+
+}
+.sidemenu-title > ul > li a:hover{
+      /* opacity: 0;
+      visibility: hidden; */
+      background: lightseagreen;
+      color: #ffffff;
+}
+
+/* 컨텐츠 바디 */
+.bodyWrap {
+      float: right;
+}
+.slider {
+      width: 800px;
+      height: 350px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+}
+.slider img {
+      width: 800px;
+      height: 350px;
+      position: absolute;
+}
+
+/* 푸터 */
+footer {
+      float: right;
+}
